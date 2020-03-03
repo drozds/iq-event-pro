@@ -1634,7 +1634,7 @@ html.mobile .showForMobileInline {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.07);
 }
 .panel.black {
-  background-color: rgba(0, 0, 0, 0.8) !important;
+  background-color: rgba(64, 61, 62, 0.55) !important;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.07);
 }
 .animated .panel.top, .animateOnEvent .panel.top, .hidePanel-top .panel.top.hideOnScroll, .slides:not(.firstSlide) .panel.top.firstSlideOnly, .slides:not(.lastSlide) .panel.top.lastSlideOnly, .slides:not(.firstSlide):not(.lastSlide) .panel.top.firstAndLastSlidesOnly, .slides.lastSlide .panel.top.exceptLastSlide, .slides.firstSlide .panel.top.exceptFirstSlide {
@@ -6156,9 +6156,9 @@ article figcaption, .text figcaption {
   }
 }
 /*
-*       _____          _             
-*      |  __ \( )     | |            
-*      | |  | |_  __ _| | ___   __ _ 
+*       _____          _
+*      |  __ \( )     | |
+*      | |  | |_  __ _| | ___   __ _
 *      | |  | | |/ _` | |/ _ \ / _` |
 *      | |__| | | (_| | | (_) | (_| |
 *      |_____/|_|\__,_|_|\___/ \__, |
@@ -6399,7 +6399,7 @@ html:not(.page-loaded) .dialog {
   left: 0;
 }
 
-/* 
+/*
 .dialogContainer > .dialog:nth-child(1){ -webkit-transition-delay: 0.1s; transition-delay: 0.1s; }
 .dialogContainer > .dialog:nth-child(2){ -webkit-transition-delay: 0.2s; transition-delay: 0.2s; }
 .dialogContainer > .dialog:nth-child(3){ -webkit-transition-delay: 0.3s; transition-delay: 0.3s; }
