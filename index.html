@@ -17,6 +17,7 @@
 </head>
 <body class="slides plain smooth slow smoothScroll animated simplifiedMobile noPreload">
 <!-- Navigation -->
+
 <nav class="side left pole medium">
   <div class="navigation default">
     <ul></ul>
@@ -85,6 +86,7 @@
             <hr class="ae-2" style="border: 0;height: 1px;background: #330307;background-image: linear-gradient(to right, #cc030b, #330102, #cc0002);width:50%;">
             <h3 class="margin-bottom-15 margin-top-2 ae-2 fromLeft">BUSINESS EVENT MICE AGENCY</h3>
             <h4 class="margin-bottom-1 ae-3 fromLeft">УМНАЯ СТРАТЕГИЯ СОБЫТИЙ</h4>
+            <span class="counter">1,234,567</span>
           </div>
         </div>
       </div>
@@ -376,11 +378,22 @@
             font-weight: 600;
         }
     </style>
+
     <!-- jQuery 3.4.1 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
     <!-- Compressed Scripts -->
     <script src="js/slides.min.js?505341" type="text/javascript"></script>
+    <script src="js/waypoint.js"></script>
+    <script src="js/counter.js"></script>
+<script>
+  $(document).ready(function($) {
+    $('.counter').counterUp({
+      delay: 10,
+      time: 1000
+    });
+  });
+</script>
+</body>
 
 </body>
 </html>
