@@ -1,3 +1,28 @@
+/* HEADER */
+
+.close-button span {
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+    position: absolute;
+    border-radius: 1px;
+}
+
+.close-button span:nth-child(1) {
+    top: 20;
+    right: 0;
+    transform: rotate(45deg);
+}
+
+.close-button span:nth-child(2) {
+    top: 20;
+    left: 0;
+    transform: rotate(-45deg);
+}
+
+/* /HEADER */
+
+
 /* ABOUT US SECTION */
 
 .about-us__title {
@@ -7,7 +32,7 @@
 
 .about-us__list {
     transition: .2s all ease;
-    ;
+
 }
 
 .about-us__list:hover {
@@ -18,7 +43,9 @@
 .about-us__why-us-list {
     font-size: 40px;
     margin-bottom: 30px;
-
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-us__why-us-list i {
@@ -29,20 +56,59 @@
     cursor: default;
 }
 
+@media screen and (max-width: 768px) {
+    .about-us__list {
+        margin-right: -25px;
+        margin-left: -25px;
+        display: none;
+    }
+
+    .about-us__list:nth-child(1) {
+        display: block;
+    }
+
+    .about-us__list:nth-child(2) {
+        display: block;
+    }
+
+    .about-us__list:nth-child(3) {
+        display: block;
+    }
+
+    .about-us__list:nth-child(4) {
+        display: block;
+    }
+
+    .about-us__why-us-list {
+        width: 100%;
+    }
+
+    .about-us__why-us-list,
+    .about-us__why-us-list i {
+        font-size: 24px;
+    }
+}
+
+
+/* /ABOUT US SECTION */
+
 .flip-card {
     background-color: transparent;
     width: 100%;
     height: 350px;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-}
-.flip-card ul{
-    text-align: left;
-    padding:10px;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
 }
 
-.flip-card ul li{
-margin-bottom: 5px;
+.flip-card ul {
+    text-align: left;
+    padding: 10px;
 }
+
+.flip-card ul li {
+    margin-bottom: 5px;
+}
+
 /* This container is needed to position the front and back side */
 .flip-card-inner {
     position: relative;
@@ -59,11 +125,15 @@ margin-bottom: 5px;
 }
 
 /* Position the front and back side */
-.flip-card-front-white,.flip-card-front-black, .flip-card-back-black ,.flip-card-back-white {
+.flip-card-front-white,
+.flip-card-front-black,
+.flip-card-back-black,
+.flip-card-back-white {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden;
+    /* Safari */
     backface-visibility: hidden;
 }
 
@@ -72,6 +142,7 @@ margin-bottom: 5px;
     background-color: white;
     color: black;
 }
+
 .flip-card-front-black {
     background-color: black;
     color: white;
@@ -82,12 +153,12 @@ margin-bottom: 5px;
     background-color: black;
     color: white;
     transform: rotateY(180deg);
-    font-size:10px ;
+    font-size: 10px;
 }
+
 .flip-card-back-white {
     background-color: white;
     color: black;
     transform: rotateY(180deg);
-    font-size:10px ;
+    font-size: 10px;
 }
-/* /ABOUT US SECTION */
