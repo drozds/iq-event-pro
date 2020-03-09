@@ -76,6 +76,12 @@
     cursor: default;
 }
 
+@media screen and (max-width: 1028px) {
+    .about-us__why-us-list {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .about-us__list {
         margin-right: -25px;
@@ -99,9 +105,6 @@
         display: block;
     }
 
-    .about-us__why-us-list {
-        width: 100%;
-    }
 
     .about-us__why-us-list,
     .about-us__why-us-list i {
